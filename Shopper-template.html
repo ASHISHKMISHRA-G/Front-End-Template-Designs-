@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-in">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper.</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            font-size: 24px;
+            font-family: Arial;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+            
+        }
+        nav{
+            font-size: 18px;
+        }
+        .brand-title{
+            font-weight: bold;
+            font-size: 26px;
+        }
+        nav span{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .shortcut-icons{
+            font-size: 18px;
+        }
+        .shortcut-icons span{
+            margin-right: 10px;
+        }
+        article{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .bi-lightning-fill{
+            color: gold;
+        }
+        main{
+            height: 700px;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            background-image: url();
+            margin-top: 20px;
+            
+        }
+        .women-fashion{
+            background-image: url("images/women-fashion.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.9;
+        }
+        .men-fashion{
+            background-image: url("images/men-fashion.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.9;
+        }
+        .kids-fashion{
+            background-image: url("images/kids-fashion.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.9;
+        }
+        .fashion-title{
+            font-weight: bold;
+            font-family: Arial Black;
+            margin-top: 10px;
+            font-size: 50px;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+        }
+        .btn-buy{
+            background-color: white;
+            font-family: Arial;
+            font-size: 18px;
+            padding: 20px;
+            text-align: center;
+            width: 150px;    
+        }
+        .women-fashion:hover, .men-fashion:hover, .kids-fashion:hover{
+            opacity: 1;
+        }
+        footer{
+            background-color: rgb(49, 47, 47);
+            color: white;
+            padding: 20px;
+            font-family: Arial;
+        }
+        .row-1{
+            text-align: center;
+            padding: 20px;
+        }
+        .footer-title{
+            font-family: Arial;
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+        .email{
+            background-color: rgb(39, 38, 38);
+            color: rgb(122, 117, 117);
+            padding: 20px;
+            display: inline-block;
+            width: 400px;
+            text-align: left;    
+        }
+        .subscribe{
+            background-color: rgb(122, 117, 117);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-left: 10px;
+        }
+        .row-2{
+            margin-top: 25px ;
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+        }
+        .footer-brand-title{
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: block;
+            
+        }
+        aside span{
+            font-size: 14px;
+            margin-right: 5px;
+           
+        }
+        .service-title{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: block;  /*It will display the title in that line only anything after this will start from next line such that it takes up the whole width*/
+        }
+        .service-title~span{
+            display: block;
+            margin-bottom: 20px ;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div>
+        <span class="brand-title">Shopper.</span>
+    </div>
+    <div>
+        <nav>
+            <span>Home</span>
+            <span>Catalog</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blog</span>
+            <span>Docs</span>
+        </nav>
+    </div>
+    <div class="shortcut-icons">
+        <span class="bi bi-search"></span>
+        <span class="bi bi-person"></span>
+        <span class="bi bi-heart"></span>
+        <span class="bi bi-cart"></span>
+    </div>
+</header>
+
+<section>
+<article>
+    <span class="bi bi-lightning-fill"></span>
+    <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
+    <span class="bi bi-lightning-fill"></span>
+
+</article>
+
+    <main>
+        <div class="women-fashion">
+            <div class="fashion-title">Women</div>
+            <div class="btn-buy">Shop Women <span class="bi bi-arrow-right"></span></div>
+        </div>
+
+        <div class="men-fashion">
+            <div class="fashion-title">Men</div>
+            <div class="btn-buy">Shop Men <span class="bi bi-arrow-right"></span></div>
+        </div>
+
+        <div class="kids-fashion">
+            <div class="fashion-title">Kids</div>
+            <div class="btn-buy">Shop Kids<span class="bi bi-arrow-right"></span></div>
+        </div>
+    </main>
+</section>
+<footer>
+    <div class="row-1">
+        <div class="footer-title">Want style Ideas and Treats?</div>
+        <div>
+            <span class="email">Enter Email *</span>
+            <span class="subscribe">Subscribe</span>
+        </div>
+    </div>
+    <div>
+        <div class="row-2">
+            <div>
+                <span class="footer-brand-title">Shopper.</span>
+                <aside>
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-youtube"></span>
+                    <span class="bi bi-twitter"></span>
+                    <span class="bi bi-instagram"></span>
+                    <span class="bi bi-linkedin"></span>
+                </aside>
+            </div>
+            <div>
+                <span class="service-title">SUPPORT</span>
+                <span>Contact</span>
+                <span>FAQs</span>
+                <span>Size Guide</span>
+                <span>Shipping & Returns</span>
+                
+            </div>
+            <div>
+                <span class="service-title">SHOP</span>
+                <span>Men's Shopping</span>
+                <span>Women's Shopping</span>
+                <span>Kid's Shopping</span>
+                <span>Discounts</span>
+            </div>
+            <div>
+                <span class="service-title">COMPANY</span>
+                <span>Our Story</span>
+                <span>Careers</span>
+                <span>Terms & Conditions</span>
+                <span>Privacy & Cookie policy</span>
+            </div> 
+            <div>
+                <address>
+                    <span class="service-title">CONTACT</span>
+                    <span>1-202-555-0105</span>
+                    <span>1-202-555-0106</span>
+                    <span>help@shopper.com</span>
+                </address>
+                <!--We will give all the class names as same class names for all divisions after footer-brand-title 
+                so that in CSS we can modify the spans of all the divisions at the same time as well as in the same format as we needed in the footer(i.e. .service-title~span{} we have given/used) -->
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
